@@ -1,0 +1,71 @@
+jthread
+------------------------------------------
+The JThread package provides some classes to make use of threads easy on 
+different platforms. The classes are actually rather simple wrappers 
+around existing thread implementations.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://research.edm.uhasselt.be/~jori/page/index.php?n=CS.Jthread
+
+Canonical download:
+  http://research.edm.uhasselt.be/jori/jthread/
+
+-------------------------------------------
+
+Build instructions:
+  unpack jthread-1.2.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./jthread-1.2.1-X.cygport all
+
+This will create:
+  /usr/src/jthread-1.2.1-X-src.tar.bz2
+  /usr/src/jthread-1.2.1-X.tar.bz2
+  /usr/src/libjthread-devel-1.2.1-X.tar.bz2
+  /usr/src/libjthread1.2.1-1.2.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libjthread1.2.1)
+  /usr/bin/cygjthread-1-2-1.dll
+  /usr/share/doc/jthread-1.2.1/ChangeLog
+  /usr/share/doc/jthread-1.2.1/TODO
+
+(libjthread-devel)
+  /usr/include/jthread/jmutex.h
+  /usr/include/jthread/jmutexautolock.h
+  /usr/include/jthread/jthread.h
+  /usr/lib/libjthread.a
+  /usr/lib/libjthread.dll.a
+  /usr/lib/libjthread.la
+  /usr/lib/pkgconfig/jthread.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.2.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

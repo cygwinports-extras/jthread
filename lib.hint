@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin
+external-source: jthread
+sdesc: "C++ cross-platform thread library (runtime)"
+ldesc: "The JThread package provides some classes to make use of threads 
+easy on different platforms. The classes are actually rather simple 
+wrappers around existing thread implementations."
