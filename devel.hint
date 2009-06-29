@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libjthread1.2.1
+requires: libjthread1.2.1
 external-source: jthread
 sdesc: "C++ cross-platform thread library (development)"
 ldesc: "The JThread package provides some classes to make use of threads 
